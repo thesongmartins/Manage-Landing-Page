@@ -1018,6 +1018,10 @@ body {
     width: auto;
   }
 
+  .sm\:cursor-pointer{
+    cursor: pointer;
+  }
+
   .sm\:self-center{
     align-self: center;
   }
