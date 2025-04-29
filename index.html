@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/public/output.css" />
+    <link rel="stylesheet" href="/output.css" />
     <link
       rel="shortcut icon"
       href="images/favicon-32x32.png"
@@ -23,7 +23,7 @@
             <img src="images/logo.svg" alt="Manage logo" />
           </div>
           <!-- Menu Items -->
-          <div class="hidden md:flex space-x-12">
+          <div class="hidden md:flex justify-center items-center space-x-12">
             <a class="hover:text-DarkGrayishBlue" href="#">Pricing</a>
             <a class="hover:text-DarkGrayishBlue" href="#">Product</a>
             <a class="hover:text-DarkGrayishBlue" href="#">About Us</a>
@@ -327,27 +327,35 @@
               /></a>
             </div>
           </div>
-          <div class="flex justify-around space-x-32">
-            <div class="flex flex-col space-y-3 text-white">
-              <a href="#" class="hover:text-DarkGrayishBlue">Home</a>
-              <a href="#" class="hover:text-DarkGrayishBlue">Pricing</a>
-              <a href="#" class="hover:text-DarkGrayishBlue">Product</a>
-              <a href="#" class="hover:text-DarkGrayishBlue">About</a>
+          <div class="flex flex-row items-center justify-center space-x-32">
+            <div class="flex justify-around space-x-32">
+              <div class="flex flex-col space-y-3 text-white">
+                <a href="#" class="hover:text-DarkGrayishBlue">Home</a>
+                <a href="#" class="hover:text-DarkGrayishBlue">Pricing</a>
+                <a href="#" class="hover:text-DarkGrayishBlue">Product</a>
+                <a href="#" class="hover:text-DarkGrayishBlue">About</a>
+              </div>
+            </div>
+            <div class="flex justify-around space-x-32">
+              <div class="flex flex-col space-y-3 text-white">
+                <a href="#" class="hover:text-DarkGrayishBlue">Careers</a>
+                <a href="#" class="hover:text-DarkGrayishBlue">Commuinty</a>
+                <a href="#" class="hover:text-DarkGrayishBlue"
+                  >Privacy Policy</a
+                >
+              </div>
             </div>
           </div>
-          <div class="flex justify-around space-x-32">
-            <div class="flex flex-col space-y-3 text-white">
-              <a href="#" class="hover:text-DarkGrayishBlue">Careers</a>
-              <a href="#" class="hover:text-DarkGrayishBlue">Commuinty</a>
-              <a href="#" class="hover:text-DarkGrayishBlue">Privacy Policy</a>
-            </div>
-          </div>
-          <div class="flex flex-col justify-between">
+          <div class="flex flex-col items-center justify-between">
             <form action="#">
               <div class="flex space-x-3">
                 <input
                   type="text"
-                  class="px-4 bg-DarkGrayishBlue rounded-full placeholder:Enter"
+                  class="px-4 bg-white rounded-full placeholder:text-DarkGrayishBlue"
+                  placeholder="Updates in your inbox"
+                  aria-label="Email address"
+                  aria-describedby="email"
+                  id="email"
                 />
                 <button
                   class="px-6 py-2 text-white bg-BrightRed hover:bg-DarkGrayishBlue rounded-full"
